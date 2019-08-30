@@ -3,7 +3,7 @@
 0. 학번 : 2515
 
 [프로젝트 1 :탄소 순환을 이용한 지구온난화 분석 및 '인류 멸망 주식회사']
-1)연구소 이름 : (연구소 이름을 까먹은 연구팀의 연구소(진짜 까먹었어요 죄송합니다))
+1)연구소 이름 : (Kite nine cow)
 2)연구소가 해결하려는 문제 : (인류에 대한 증오심을 품고 있는 반상어 씨)
 3)연구소의 깃헙 링크 : (https://github.com/Usernam02/2508-2510)
 4)내가 기여한 내용
@@ -259,14 +259,14 @@ print(rslt)
 2)연구소가 해결하려는 문제 : (화학실험시간에 산염기 적정곡선을 해석하지 못하여 어려움을 겪고 있는 신정서 학생의 문제를 해결하기 위한 프로젝트입니다.)
 3)연구소의 깃헙 링크 : https://github.com/jeongseo0503/luxuryproject)
 4)내가 기여한 내용
-(import numpy as np
+import numpy as np
 pk=float(input('산의 pKa를 입력해주세요'))
 k=10**((-1)*(pk))
 c=float(input('산의 농도를 입력해주세요(M)'))
 v=float(input('산의 부피를 입력해주세요(mL)'))
 cNaOH= float(input('NaOH의 농도를 입력해주세요(M)'))
 vNaOH=float(input('NaOH의 부피를 입력해주세요(mL)'))
-a=(k/c)**0.5
+a=(k/c)**0.5 #5%근사, 농도가 매우 낮을시 실제상황과 다르기 때문에 미리 명시해 줘야됨.
 
 def pH(x, cNaOH, c, v, k):
     acidmmol=c*v
@@ -299,7 +299,7 @@ plt.plot(x1,y1)
 plt.show()
 a=c*v/cNaOH
 b= dang(a, cNaOH, c, v, k)
-print(int(a), 'mL를 넣었을 때 당량점 입니다. 이때 pH는',float(b), '입니다.'))
+print(int(a), 'mL를 넣었을 때 당량점 입니다. 이때 pH는',float(b), '입니다.')
 5)내가 기여한 내용에 대한 설명
-(자신이 어떤 기여를 한 것인지 설명해주세요)
+(5% 근사는 특수 상황에서만 성립되기 때문에 미리 경고를 해줘야 한다. 미리 5% 근사가 되는지 알아봐주는 코드가 있었으면 좋겠다.)
 6)내가 기여한 내용의 반영 여부 : (O,X 중 선택해주세요)
